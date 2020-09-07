@@ -1,0 +1,267 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,700;1,400&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.html{
+    font-size: 62.5%; /* 1rem = 10px */
+    font-family: 'Poppins', sans-serif;
+}
+
+.header{
+    height: 90vh;
+    background-image: url("Assets/header3.jpg");
+    background-size: cover;
+    background-position: right;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.text-principal{
+    font-family: 'Poppins', sans-serif;
+    font-size: 3.5rem;
+    color: #1C2332;
+    text-transform: uppercase;
+    letter-spacing: 0.5rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.navbar{
+    height: 12vh;
+    background-color: transparent;
+    transition: all 0.5s;
+    display: grid;
+    grid-template-columns: 2fr repeat(2, 1fr);
+    align-items: center;
+    padding: 0 4rem;
+}
+
+.navbar:hover{
+    background-color: white;
+}
+
+.navlist-liens{
+    list-style: none;
+    display: grid;
+    width: 75%;
+    grid-template-columns: repeat(5, 1fr);
+}
+
+.navlist-liens a{
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    color: #1C2332;
+    text-decoration: none;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.compagny{
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.5rem;
+    color:rgb(31, 156, 194);
+}
+
+.navlist-icon{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 2rem;
+    margin-left: auto;
+    list-style: none;
+}
+
+.navlist-icon i{
+    color: #1C2332;
+    font-size: 0.8rem;
+    cursor: pointer;
+}
+
+.navlist-icon a{
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    background-color: black;
+    text-decoration: none;
+    padding: 0.2rem 0.5rem;
+    border-radius: 2rem;
+}
+
+.categorie{
+    padding: 3rem 8rem;
+}
+
+.categorie-list{
+    width: 75%;
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin: 0 auto;
+}
+
+.categorie-list a{
+    text-decoration: none;
+    font-size: 1rem;
+    color: #1C2332;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+}
+
+.produit-list{
+    margin-top: 3rem;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(20rem, 1fr));
+    gap: 2rem;
+}
+
+.produit{
+    text-align: center;
+    position: relative;
+}
+
+.produit img{
+    width: 100%;
+}
+
+.produit-nom {
+    font-size: 1rem;
+    color: #1C2332;
+    font-family: 'Poppins', sans-serif;
+}
+
+.produit-prix{
+    font-size: 1rem;
+    color: #1C2332;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+}
+
+.notification{
+    position: absolute;
+    z-index: 10;
+    background-color: #FFBB33;
+    color: white;
+    padding: 0.5rem 1rem;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    top: 2rem;
+}
+
+.produit-1{
+    grid-column: 1 / span 2;
+    grid-row: 1 / span 2;
+}
+
+.produit-7{
+    grid-column: 1 / span 3;
+}
+
+.produit-lien{
+    position: absolute;
+    top: 90%;
+    left: 30%;
+    opacity: 0;
+    transition: all 0.5s;
+}
+
+.produit-lien a{
+    background-color: #1C2332;
+    padding: 0.5rem 1rem;
+    border-radius: 5rem;
+    margin-right: 2rem;
+}
+
+.produit-lien i{
+    color: white;
+    font-size: 1.2rem;
+    transition: all 0.5s;
+}
+
+.produit-lien i:hover{
+    color: #FFBB33;
+}
+
+.produit:hover > .produit-lien{
+    top: 60%;
+    opacity: 1;
+}
+
+.section-news{
+    padding: 5rem 8rem;
+    text-align: center;
+}
+
+.section-titre{
+    font-family: 'Poppins', sans-serif;
+    font-size: 3rem;
+    font-weight: 400;
+    color: #1C2332;
+    letter-spacing: 0.5rem;
+}
+
+.section-info{
+    font-size: 1.2rem;
+    margin-top: 1rem;
+    letter-spacing: 0.4rem;
+}
+
+.news-input{
+    margin-top: 3rem;
+    outline: none;
+    border: none;
+    padding: 1.5rem 2rem;
+    width: 50%;
+    border-bottom: 1px #1C233291 solid;
+    font-style: italic;
+    font-weight: 700;
+    transition: all 0.5s;
+}
+
+.news-input:hover {
+    border-bottom: 2px #1C2332 solid;
+}
+
+.news-button {
+    padding: 1.5rem 2rem;
+    outline: none;
+    border: none;
+    background-color: transparent;
+    font-weight: 700;
+    border-bottom: 2px  #1C2332 solid;
+    margin-left: 1.2rem;
+    font-family: 'Poppins', sans-serif;
+    cursor: pointer;
+}
+
+.footer {
+    padding: 2rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    background-color: #EEEEEE;
+}
+
+.footer-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 8rem);
+    gap: 1rem;
+    list-style: none;
+}
+
+.footer-list a{
+    font-style: 1.3rem;
+    color: #1C2332;
+    text-decoration: none;
+}
+
+.footer-icon{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    justify-self: end;
+    column-gap: 2rem;
+    list-style: none;
+}
